@@ -3,7 +3,7 @@ Create a program that counts the number of vowels in a file.
 Requirements:
   
     • User must specify the name of the file (from the command line) to analyze when the program is run. 
-    If not, an error should be generated.
+      If not, an error should be generated.
   
     • Use constants where appropriate.
   
