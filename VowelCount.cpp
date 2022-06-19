@@ -75,9 +75,9 @@ int main(int argc, char *argv[])  // argc is number of arguments and argv is the
         else if (extractCharacter == 'U' || extractCharacter == 'u')
             u_count += 1;
         else if (extractCharacter == 'Z' || extractCharacter == 'z')
-            u_count += 1;
+            z_count += 1;
         else if (extractCharacter == 'Y' || extractCharacter == 'y')
-            u_count += 1;
+            y_count += 1;
     }
 
     //  String sentences that do not change
