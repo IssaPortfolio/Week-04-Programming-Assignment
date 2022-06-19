@@ -56,7 +56,7 @@ int main(int argc, char *argv[])  // argc is number of arguments and argv is the
     }
 
     // Initializing variables with initial value 0
-    int a_count = 0, e_count = 0, i_count = 0, o_count = 0, u_count = 0; 
+    int a_count = 0, e_count = 0, i_count = 0, o_count = 0, u_count = 0, z_count = 0, y_count = 0; 
 
     char extractCharacter;  // Initializing char variable
 
@@ -74,6 +74,10 @@ int main(int argc, char *argv[])  // argc is number of arguments and argv is the
             o_count += 1;
         else if (extractCharacter == 'U' || extractCharacter == 'u')
             u_count += 1;
+        else if (extractCharacter == 'Z' || extractCharacter == 'z')
+            u_count += 1;
+        else if (extractCharacter == 'Y' || extractCharacter == 'y')
+            u_count += 1;
     }
 
     //  String sentences that do not change
@@ -86,8 +90,10 @@ int main(int argc, char *argv[])  // argc is number of arguments and argv is the
     cout << right << setw(61) << left << NUM_OF_SENTENCE + "I's: " << i_count << endl;
     cout << right << setw(61) << left << NUM_OF_SENTENCE + "O's: " << o_count << endl;
     cout << right << setw(61) << left << NUM_OF_SENTENCE + "U's: " << u_count << endl;
+    cout << right << setw(61) << left << NUM_OF_SENTENCE + "Z's: " << z_count << endl;
+    cout << right << setw(61) << left << NUM_OF_SENTENCE + "Y's: " << y_count << endl;
     //  Total of all vowels
-    const int VOWEL_TOTAL = a_count + e_count + i_count + o_count + u_count;
+    const int VOWEL_TOTAL = a_count + e_count + i_count + o_count + u_count + z_count + y_count;
     cout << right << setw(61) << left << VOWEL_TOTAL_SENTENCE << VOWEL_TOTAL << endl;
 
     //  Closes the input stream file
